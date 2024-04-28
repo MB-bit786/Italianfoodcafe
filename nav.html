@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * 
+    {
+        margin:  0;
+        padding: 0;
+    }
+
+    nav {
+        background-color: black;
+        padding: 30px;
+        display: flex;
+        height: 20px;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+        margin-right: 10px;
+    }
+
+    .show {
+        display: none;
+    }
+
+    .hide {
+        display: none;
+    }
+
+    .show:hover .hide {
+        background-color: red;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    @media screen and (max-width:780px) {
+        .navbar {
+            display: none;
+        }
+
+        .show {
+            display: block;
+        }
+
+        .show:hover .hide {
+        background-color: green;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    
+    nav {
+        background-color: yellow;
+        padding: 30px;
+        display: flex;
+        height: 20px;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+        margin-right: 10px;
+    }
+    }
+</style>
+
+<body>
+    <nav>
+
+        <div class="navbar">
+            <a href="#">HOME</a>
+            <a href="#">HOME</a>
+            <a href="#">HOME</a>
+            <a href="#">HOME</a>
+            <a href="#">HOME</a>
+        </div>
+        <div class="show">
+            <a href="#">HOVER</a>
+            <div class="hide">
+                <a href="#">HOME</a>
+                <a href="#">HOME</a>
+                <a href="#">HOME</a>
+                <a href="#">HOME</a>
+                <a href="#">HOME</a>
+            </div>
+        </div>
+  
+    </nav>
+</body>
+
+</html>
